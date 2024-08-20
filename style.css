@@ -1,0 +1,1053 @@
+/* For Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+/* General Reset and Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* General Reset and Font Styling */
+
+/* Root Variables for Colors */
+:root {
+  --accent: #f79b31;
+  --nova: #8b26ff;
+  --light-bg: #f4f4f4;
+  --dark-bg: #333;
+  --highlight: #ff6600;
+  --primary-text: #333;
+  --secondary-text: #666;
+}
+
+/* Color Variables */
+
+/* Body Styling */
+body {
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  color: var(--primary-text);
+}
+
+/* Body Minimum Height and Background */
+
+/* Section Styling */
+section {
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Section Styling */
+
+/* Navigation Bar Styling */
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--nova);
+  background-color: #ffffff;
+  padding: 30px 50px;
+  transition: all 0.4s ease-out;
+  filter: drop-shadow(5px 5px 10px transparent);
+}
+
+/* Navigation Bar */
+
+/* Sticky Navigation Bar Styling */
+nav.sticky {
+  background-color: #ffffff;
+  filter: drop-shadow(5px 5px 10px #ab4700);
+}
+
+/* Sticky Navigation Bar */
+
+/* Brand Styling */
+.brand {
+  text-decoration: none;
+  transition: all ease-in-out 0.4s;
+  color: var(--nova);
+}
+
+/* Brand */
+
+/* Brand Heading Styling */
+.brand h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+/* Brand Heading */
+
+/* Accent Styling */
+.accent {
+  color: var(--accent);
+}
+
+/* Accent Color */
+
+/* Brand Hover Effect */
+.brand:hover {
+  opacity: 0.8;
+}
+
+/* Brand Hover */
+
+/* Menu Styling */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+
+/* Menu Container */
+
+/* Menu Links */
+.menu a {
+  display: inline-block;
+  position: relative;
+  color: var(--nova);
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.4s ease-out;
+}
+
+/* Menu Links */
+
+/* Menu Link Hover Effect */
+.menu a:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+/* Menu Link Hover */
+
+/* Button Styles */
+.btn {
+  color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Generic Button */
+
+/* Secondary Button Styles */
+.btn-2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--nova);
+  transition: all ease-in-out 0.4s;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Secondary Button */
+
+/* Secondary Button Icon */
+.btn-2 i {
+  font-size: 32px;
+  transition: all 0.4s ease-out;
+}
+
+/* Secondary Button Icon */
+
+/* Secondary Button Hover Effect */
+.btn-2:hover i {
+  color: var(--accent);
+}
+
+/* Secondary Button Icon Hover */
+
+/* Secondary Button Hover Effect */
+.btn-2:hover {
+  gap: 10px;
+}
+
+/* Secondary Button Hover */
+
+/* Hero Page Styling */
+.heropage {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("img/hero-background-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hero Page */
+
+/* Hero Headlines Styling */
+.hero-headlines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750px;
+  text-align: center;
+}
+
+/* Hero Headlines */
+
+/* Hero Headline Text */
+.hero-headlines h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+/* Hero Headline */
+
+/* Hero Paragraph Text */
+.hero-headlines p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Hero Paragraph */
+
+/* Hero Buttons Container */
+.hero-headlines-buttons {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* Hero Buttons Container */
+
+/* Primary Button in Hero Section */
+.btn-3 {
+  width: 205px;
+  height: 53px;
+  background-color: var(--nova);
+  font-size: 24px;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 2px solid var(--accent);
+  transition: all 0.4s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Primary Button */
+
+/* Primary Button Hover Effect */
+.btn-3:hover {
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+/* Primary Button Hover */
+
+/* Transparent Button Styling */
+.btn-transparent {
+  background-color: var(--nova);
+  color: #ffffff;
+}
+
+/* Transparent Button */
+
+/* Transparent Button Hover Effect */
+.btn-transparent:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+/* Transparent Button Hover */
+
+/* Hero Images Container */
+.hero-images {
+  display: flex;
+  margin-top: 56px;
+  gap: 35px;
+}
+
+/* Hero Images Container */
+
+/* Requirements Section */
+.requirements {
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-image: url(img/requirements-background-img.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Requirements Section */
+
+/* Requirements Headlines */
+.requirements-headlines {
+  width: 658px;
+}
+
+/* Requirements Headlines Container */
+
+/* Requirements Headline Text */
+.requirements-headlines h1 {
+  font-size: 96px;
+  font-weight: 900;
+}
+
+/* Requirements Headline */
+
+/* Requirements Paragraph Text */
+.requirements-headlines p {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 49px;
+}
+
+/* Requirements Paragraph */
+
+/* Requirements Item Container */
+.r-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Requirements Item Container */
+
+/* Requirements Item */
+.r-item {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Requirements Item */
+
+/* Requirements Logo */
+.r-logo {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--nova);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Requirements Logo */
+
+/* Requirements Logo Icon */
+.r-logo i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Requirements Logo Icon */
+
+/* Requirements Logo Icon Hover Effect */
+.r-logo i:hover {
+  transform: scale(1.1);
+}
+
+/* Requirements Logo Icon Hover */
+
+/* Requirements Item Heading */
+.r-item h5 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* Requirements Item Heading */
+
+/* Pets Section */
+.pets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 74px;
+}
+
+/* Pets Section */
+
+/* Pets Headlines Container */
+.pets-headlines {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* Pets Headlines Container */
+
+/* Pets Headlines Icon */
+.pets-headlines i {
+  font-size: 56px;
+  color: #2692ff;
+}
+
+/* Pets Headlines Icon */
+
+/* Pets Headlines Text */
+.pets-headlines h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+
+/* Pets Headlines Text */
+
+/* Pets Collection Container */
+.pets-collection {
+  display: flex;
+  gap: 28px;
+  margin-top: 74px;
+}
+
+/* Pets Collection */
+
+/* Pets Items Container */
+.pets-items {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  transition: 0.5s ease-out;
+}
+
+/* Pets Items Container */
+
+/* Pets Item Heading */
+.pets-item h3 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+/* Pets Item Heading */
+
+/* Pets Button */
+.btn-pets {
+  width: 269px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border-radius: 15px;
+  margin-top: 48px;
+}
+
+/* Pets Button */
+
+/* Pets Button Hover Effect */
+.btn-pets:hover {
+  background-color: var(--nova);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Pets Button Hover */
+
+/* Team Section */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Team Section */
+
+/* Team Headlines Container */
+.team-headlines {
+  text-align: center;
+  width: 730px;
+}
+
+/* Team Headlines Container */
+
+/* Team Headlines Text */
+.team-headlines h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+/* Team Headlines Text */
+
+/* Team Members Container */
+.team-members {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 64px;
+}
+
+/* Team Members Container */
+
+/* Team Member */
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid var(--nova);
+  border-radius: 15px;
+}
+
+/* Team Member */
+
+/* Team Member Image */
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Team Member Image */
+
+/* Team Member Name */
+.team-member h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Team Member Name */
+
+/* Team Member Role */
+.team-member p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+
+/* Team Member Role */
+
+/* Testimonials Section */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+/* Testimonials Section */
+
+/* Testimonials Subheading */
+.testimonials h6 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--highlight);
+}
+
+/* Testimonials Subheading */
+
+/* Testimonials Heading */
+.testimonials h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+/* Testimonials Heading */
+
+/* Testimony Container */
+.testimony-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 34px;
+}
+
+/* Testimony Container */
+
+/* Testimony Item */
+.testimony-item {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 222px;
+  border: 2px solid var(--nova);
+  border-radius: 15px;
+  padding: 24px 32px;
+  background-color: #ffffff;
+  transition: all 0.4s ease-out;
+}
+
+/* Testimony Item */
+
+/* Testimony Item Hover Effect */
+.testimony-item:hover {
+  border-color: var(--highlight);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimony Item Hover */
+
+/* Testimony People Container */
+.testimony-people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Testimony People Container */
+
+/* Testimony People Icon */
+.testimony-people i {
+  font-size: 50px;
+  color: orangered;
+}
+
+/* Testimony People Icon */
+
+/* Testimony Name Container */
+.testimony-name {
+  display: flex;
+  gap: 14px;
+}
+
+/* Testimony Name Container */
+
+/* Testimony Name Heading */
+.testimony-name h4 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Testimony Name Heading */
+
+/* Testimony Name Paragraph */
+.testimony-name p {
+  opacity: 0.9;
+}
+
+/* Testimony Name Paragraph */
+
+/* Testimony Text */
+.testimony-text {
+  font-weight: 600;
+  margin-top: 28px;
+}
+
+/* Testimony Text */
+
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+/* About Section */
+
+/* About Headlines Container */
+.about-headlines {
+  display: flex;
+  flex-direction: column;
+  width: 885px;
+}
+
+/* About Headlines Container */
+
+/* About Headline Text */
+.about-headlines h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+/* About Headline */
+
+/* About Paragraph Text */
+.about-headlines p {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+/* About Paragraph */
+
+/* About Info Container */
+.about-info {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 76px;
+  margin-top: 40px;
+}
+
+/* About Info Container */
+
+/* About Info Item */
+.about-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About Info Item */
+
+/* About Info Item Heading */
+.about-info-item h5 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+/* About Info Item Heading */
+
+/* About Info Item Subheading */
+.about-info-item h6 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* About Info Item Subheading */
+
+/* About Info Divider */
+.about-info-divider {
+  height: 100px;
+  border-left: 3px solid #ccc;
+}
+
+/* About Info Divider */
+
+/* About Headlines Button */
+.about-headlines button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--nova);
+  color: #ffffff;
+  margin: 48px auto 0 auto;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* About Headlines Button */
+
+/* About Headlines Button Hover Effect */
+.about-headlines button:hover {
+  background-color: var(--accent);
+}
+
+/* About Headlines Button Hover */
+
+/* Footer Section */
+/* General Footer Styling */
+/* General Footer Styling */
+#footer {
+  background-color: #333;
+  /* Adjust as needed */
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-links {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-links h2 {
+  margin-bottom: 15px;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  margin-right: 20px;
+}
+
+.links a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #ffcc00;
+  /* Highlight color for links */
+}
+
+.footer-brand {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.footer-brand h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-brand h1:hover {
+  color: #ffcc00;
+  /* Highlight color for brand name */
+}
+
+.footer-brand p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffcc00;
+  /* Highlight color for social icons */
+  transform: scale(1.1);
+  /* Slightly enlarge icons on hover */
+}
+
+.footer-contact-info {
+  flex: 1;
+}
+
+.contact-info-item {
+  margin-bottom: 10px;
+}
+
+.contact-info-item a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.contact-info-item i {
+  margin-right: 8px;
+}
+
+.contact-info-item a:hover {
+  color: #ffcc00;
+  /* Highlight color for contact info */
+}
+
+/* Copyright Styling */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.copyright i {
+  color: #ffcc00;
+  /* Highlight color for copyright symbol */
+}
+
+/* Footer Contact Links Hover */
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .footer-links {
+    padding: 20px;
+  }
+
+  .link-container {
+    gap: 30px;
+  }
+
+  .footer-brand h1 {
+    font-size: 35px;
+  }
+}
+
+/* Media Queries for Large Screens */
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-headlines h1 {
+    font-size: 48px;
+  }
+
+  .hero-headlines p {
+    font-size: 18px;
+  }
+
+  .hero-images {
+    flex-direction: column;
+  }
+
+  .testimonials h1 {
+    font-size: 48px;
+  }
+
+  .testimony-item {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media Queries for Small Screens */
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  .hero-headlines h1 {
+    font-size: 36px;
+  }
+
+  .hero-headlines p {
+    font-size: 16px;
+  }
+
+  .footer-links h2 {
+    font-size: 22px;
+  }
+
+  .footer-brand h1 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile Adjustments */
+
+/* Media Queries for Large Screens */
+@media (max-width: 1200px) {
+  .hero-headlines h1 {
+    font-size: 56px;
+  }
+
+  .hero-headlines p {
+    font-size: 22px;
+  }
+
+  .footer-links {
+    padding: 20px;
+  }
+
+  .link-container {
+    gap: 30px;
+  }
+
+  .footer-brand h1 {
+    font-size: 35px;
+  }
+}
+
+/* Media Queries for Large Screens */
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-headlines h1 {
+    font-size: 48px;
+  }
+
+  .hero-headlines p {
+    font-size: 18px;
+  }
+
+  .hero-images {
+    flex-direction: column;
+  }
+
+  .testimonials h1 {
+    font-size: 48px;
+  }
+
+  .testimony-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-brand {
+    padding: 20px;
+  }
+
+  .footer-brand h1 {
+    font-size: 32px;
+  }
+}
+
+/* Media Queries for Small Screens */
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  .hero-headlines h1 {
+    font-size: 36px;
+  }
+
+  .hero-headlines p {
+    font-size: 16px;
+  }
+
+  .footer-links h2 {
+    font-size: 22px;
+  }
+
+  .footer-brand h1 {
+    font-size: 30px;
+  }
+
+  .team-member {
+    width: 200px;
+    padding: 15px;
+  }
+
+  .testimony-item {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+}
+
+/* Mobile Adjustments */
